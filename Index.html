@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Jeet Foundation Classes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      height: 60px;
+    }
+    nav {
+      background: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .hero {
+      background: url('https://yt3.googleusercontent.com/ytc/AIdro_kRpslVV2Z3Ku6UOd4zGVNn5UdHvF9DixnkztkQ=s900-c-k-c0x00ffffff-no-rj') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .btn {
+      background: #ff6a00;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .testimonial, .blog-post {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+    }
+    .counter-container {
+      display: flex;
+      justify-content: space-around;
+      margin: 2rem auto;
+      max-width: 600px;
+    }
+    .counter {
+      text-align: center;
+    }
+    .counter h3 {
+      font-size: 2rem;
+      color: #ff6a00;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        margin: 0.5rem 0;
+      }
+      .counter-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.imgur.com/LRW1XYz.png" alt="The Jeet Foundation Logo" />
+    <h1>The Jeet Foundation Classes</h1>
+    <p>By Shubham Singla</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#youtube">YouTube</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#downloads">Downloads</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Empowering Students with Concept-Based Learning</h1>
+  </section>
+
+  <div class="container" id="about">
+    <h2>About Us</h2>
+    <p>The Jeet Foundation Classes is an online learning platform started by Shubham Singla. We provide expert guidance in:</p>
+    <ul>
+      <li>Science (Classes 6 to 10)</li>
+      <li>Biology (Classes 11 & 12, NEET level)</li>
+      <li>English Grammar (Classes 6 to 12)</li>
+    </ul>
+  </div>
+
+  <div class="container" id="courses">
+    <h2>Our Courses</h2>
+    <ul>
+      <li>📘 NCERT-Based Science Classes (6–10)</li>
+      <li>🔬 Biology for Boards & NEET (11–12)</li>
+      <li>📖 English Grammar from Basic to Advanced (6–12)</li>
+      <li>🧠 Doubt Solving, Concept Videos, and Practice Worksheets</li>
+    </ul>
+  </div>
+
+  <div class="container" id="youtube">
+    <h2>Watch Us on YouTube</h2>
+    <p>Subscribe to our YouTube channel for free educational content:</p>
+    <a href="https://youtube.com/@shubhamsingla-i9n" class="btn" target="_blank">Visit Channel</a>
+  </div>
+
+  <div class="container" id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      <p>"Shubham Sir explains everything in a simple and clear way. I improved a lot in Science!"</p>
+      <strong>- Aryan, Class 9</strong>
+    </div>
+    <div class="testimonial">
+      <p>"The biology NEET tips helped me score better. Thank you Jeet Foundation!"</p>
+      <strong>- Kritika, Class 12</strong>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Our Achievements</h2>
+    <div class="counter-container">
+      <div class="counter">
+        <h3 id="students">0</h3>
+        <p>Students Taught</p>
+      </div>
+      <div class="counter">
+        <h3 id="views">0</h3>
+        <p>YouTube Views</p>
+      </div>
+      <div class="counter">
+        <h3 id="courses">0</h3>
+        <p>Courses</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="downloads">
+    <h2>Download Study Materials</h2>
+    <ul>
+      <li><a href="#" download>📄 Class 10 Science Notes (PDF)</a></li>
+      <li><a href="#" download>📘 Class 11 Biology Diagrams (PDF)</a></li>
+      <li><a href="#" download>📝 English Grammar Worksheets</a></li>
+    </ul>
+  </div>
+
+  <div class="container" id="blog">
+    <h2>Our Blog</h2>
+    <div class="blog-post">
+      <h3>How to Prepare for Science Exams?</h3>
+      <p>Start from NCERT, focus on concepts, solve previous year questions...</p>
+    </div>
+    <div class="blog-post">
+      <h3>Top 5 Grammar Mistakes Students Make</h3>
+      <p>Read about the most common English grammar errors and how to fix them...</p>
+    </div>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <form action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <textarea name="Message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p>📞 WhatsApp: <a href="https://wa.me/917999279246" target="_blank">7999279246</a></p>
+    <p>📧 Email: <a href="mailto:dangishubhamsingla@gmail.com">dangishubhamsingla@gmail.com</a></p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 The Jeet Foundation Classes. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Animated Counters
+    function animateValue(id, start, end, duration) {
+      let obj = document.getElementById(id);
+      let range = end - start;
+      let current = start;
+      let increment = end > start ? 1 : -1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      let timer = setInterval(function () {
+        current += increment;
+        obj.innerText = current;
+        if (current == end) clearInterval(timer);
+      }, stepTime);
+    }
+
+    animateValue("students", 0, 1200, 1500);
+    animateValue("views", 0, 150000, 2000);
+    animateValue("courses", 0, 25, 1000);
+  </script>
+
+</body>
+</html>
